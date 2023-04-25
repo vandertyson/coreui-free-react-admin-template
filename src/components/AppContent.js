@@ -7,7 +7,7 @@ import routes from '../routes'
 
 const AppContent = () => {
   return (
-    <CContainer lg>
+    // <CContainer>
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes>
           {routes.map((route, idx) => {
@@ -26,7 +26,7 @@ const AppContent = () => {
           <Route path="/" element={<Navigate to="dashboard" replace />} />
         </Routes>
       </Suspense>
-    </CContainer>
+    // </CContainer>
   )
 }
 
